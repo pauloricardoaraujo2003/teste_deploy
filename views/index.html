@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>calculadora de media de nota</title>
+		<title>Calculadora de Média Aritmética </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="media.css">
-		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<script data-ad-client="ca-pub-6898048259888834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<style>
+			body{
+				background-color:darkslategrey;
+			}
+			h4{
+				color:wheat;
+			}
+			h1{
+				text-align: center;
+				color: greenyellow;	
+			}
+		</style>
 	</head>
-	<body style="background-color: #e1fefb
-
-
-;">
-			<h1 style="text-align: center; color: green;">Calculadora de Média</h1><br>	
+	<body>
+			<h1>Calculadora de Média Aritmética </h1><br>	
 		<div class="media">
 			<form>
   				<div class="form-group row">
@@ -20,40 +28,40 @@
     			<div class="col-sm-10">
       				<h4>nota do primeiro bimestre: </h4>
       				<input style="background-color: #98FB98
-" type="number" class="form-control" id="nota1" placeholder="digite sua nota do primeiro bimestre">
+" type="number" class="form-control" min="0" max="10" id="nota1" placeholder="digite sua nota do primeiro bimestre">
     			</div>
     			<div class="col-sm-10">
       				<h4>nota do segundo bimestre: </h4><input style="background-color: #98FB98
-" type="number" class="form-control" id="nota2" placeholder="digite sua nota do segundo bimestre">
+" type="number" class="form-control" min="0" max="10" id="nota2" placeholder="digite sua nota do segundo bimestre">
     			</div>
     			<div class="col-sm-10">
       				<h4>nota do terceiro bimestre: </h4>
       				<input style="background-color: #98FB98
-" type="number" class="form-control" id="nota3"placeholder="digite sua nota do terceiro bimestre">
+" type="number" class="form-control" min="0" max="10" id="nota3"placeholder="digite sua nota do terceiro bimestre">
     			</div>
     			<div class="col-sm-10">
       				<h4>nota do quarto bimestre: </h4>
-      				<input style="background-color: #98FB98
-" type="number" class="form-control" id="nota4" placeholder="digite sua nota do quarto bimestre">
+      				<input style="background-color: #98FB98;
+" type="number" class="form-control" min="0" max="10" id="nota4" placeholder="digite sua nota do quarto bimestre">
     			</div>
 			<button type="button" class="btn btn-success btn-lg" onclick="CalcularMedia.exibirEntradas();">
 			calcular Media</button>
 		</div>
-		<h3 style="text-align:  center; color: red; font-size: 10px" > &copy; Paulo Ricardo &harr;</h3>
+		<h3 style="text-align:  center; color:gold; font-size: 15px" > Criador do Site: Paulo Ricardo &copy; 2020 </h3>
 		<script type="text/javascript">
-      			alert("ola")
+    		alert("ola, seja muito bem-vindo(a) ao nosso programa!")
 			nome = prompt("qual o nome do discente?");
-			var CalcularMedia = new function(){
-			  this.exibirEntradas = function(){
-			    var nota1 = parseInt(document.getElementById("nota1").value);
-			    var nota2 = parseInt(document.getElementById("nota2").value);
-			    var nota3 = parseInt(document.getElementById("nota3").value);
-			    var nota4 = parseInt(document.getElementById("nota4").value);
-			    var media = alert("a média do discente, " + nome + ", foi: " + (nota1 + nota2 + nota3 + nota4)/4);  
-			    var mediaS = alert("a soma das notas do discente, " + nome + ", foi: " + (nota1+ nota2+nota3+nota4));
-			    // var ResultadoFinal= document.getElementById(resultadoFinal)
+					var CalcularMedia = new function(){
+				  	this.exibirEntradas = function(){
+				    	var nota1 = parseInt(document.getElementById("nota1").value);
+				    	var nota2 = parseInt(document.getElementById("nota2").value);
+				    	var nota3 = parseInt(document.getElementById("nota3").value);
+				    	var nota4 = parseInt(document.getElementById("nota4").value);
+				    	var media = alert("a média do discente, " + nome + ", foi: " + (nota1 + nota2 + nota3 + nota4)/4);  
+				    	var mediaS = alert("a soma das notas do discente, " + nome + ", foi: " + (nota1+ nota2+nota3+nota4));
+				    // var ResultadoFinal= document.getElementById(resultadoFinal)
   }
 }
-    </script>
+   		 </script>
 	</body>
 </html>
